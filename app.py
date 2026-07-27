@@ -113,11 +113,11 @@ st.markdown(
 SEGMENTS = [
     {"label": "WIN 🍹", "color": RED, "text_color": WHITE, "win": True},
     {"label": "LOSE", "color": WHITE, "text_color": RED, "win": False},
-    {"label": "WIN", "color": RED, "text_color": WHITE, "win": True},
+    {"label": "WIN 🍹", "color": RED, "text_color": WHITE, "win": True},
     {"label": "LOSE", "color": WHITE, "text_color": RED, "win": False},
     {"label": "WIN 🍹", "color": RED, "text_color": WHITE, "win": True},
     {"label": "LOSE", "color": WHITE, "text_color": RED, "win": False},
-    {"label": "WIN", "color": RED, "text_color": WHITE, "win": True},
+    {"label": "WIN 🍹", "color": RED, "text_color": WHITE, "win": True},
     {"label": "LOSE", "color": WHITE, "text_color": RED, "win": False},
 ]
 N_SEGMENTS = len(SEGMENTS)
@@ -225,7 +225,7 @@ def show_result_dialog(result: str, name: str):
         )
     else:
         st.error("😢 So close! You didn't win this time.")
-        st.write("You can spin again in **5 minutes** — good luck next time!")
+        st.write("You can spin again in **1 minute** — good luck next time!")
 
     if st.button("Close", use_container_width=True):
         st.rerun()
