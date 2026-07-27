@@ -10,7 +10,7 @@ and phone number, spin the wheel, and see if you win!
 - Three input fields: **Name**, **Age**, **Phone number**
 - A red & white spinning wheel styled for **EVERS KÖK & BAR**
 - A pop-up after each spin announcing a **win** or a **loss**
-- If you **lose**, you can spin again after a **5-minute cooldown**
+- If you **lose**, you can spin again after a **1-minute cooldown**
 - If you **win**, you can **download a JPEG certificate** for a free drink,
   redeemable at EVERS KÖK & BAR, Stenkilsvägen 23, Vätö
 
@@ -30,11 +30,11 @@ later (e.g. swapping the storage layer or the odds) without touching the UI.
 
 ## How it works (rules)
 
-- Win probability is **20%** by default (configurable in `backend.py` via
+- Win probability is **50%** by default (configurable in `backend.py` via
   `WIN_PROBABILITY`).
 - Participants must be **18 or older** (configurable via `MIN_AGE`).
 - Each phone number can spin once; after a **loss**, that phone number must
-  wait **5 minutes** before spinning again. Wins have no cooldown.
+  wait **1 minute** before spinning again. Wins have no cooldown.
 - Attempts are stored locally in a file called `spins_data.json`, created
   automatically the first time someone spins. This is a lightweight
   "database" suitable for a home/small-bar setting — it is **not** meant for
@@ -80,7 +80,7 @@ later (e.g. swapping the storage layer or the odds) without touching the UI.
   Streamlit Community Cloud, this file may be reset whenever the app
   restarts or redeploys — fine for casual home/bar use, but not a permanent
   record of winners.
-- The 5-minute cooldown is tracked **per phone number**, not per browser, so
+- The 1-minute cooldown is tracked **per phone number**, not per browser, so
   it works even if someone refreshes the page or uses a different device.
 - The wheel is drawn with SVG + CSS animation directly inside Streamlit —
   no external image files or JavaScript libraries required.
