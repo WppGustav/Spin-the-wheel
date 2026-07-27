@@ -113,11 +113,11 @@ st.markdown(
 SEGMENTS = [
     {"label": "WIN 🍹", "color": RED, "text_color": WHITE, "win": True},
     {"label": "LOSE", "color": WHITE, "text_color": RED, "win": False},
-    {"label": "LOSE", "color": RED, "text_color": WHITE, "win": False},
+    {"label": "WIN", "color": RED, "text_color": WHITE, "win": True},
     {"label": "LOSE", "color": WHITE, "text_color": RED, "win": False},
     {"label": "WIN 🍹", "color": RED, "text_color": WHITE, "win": True},
     {"label": "LOSE", "color": WHITE, "text_color": RED, "win": False},
-    {"label": "LOSE", "color": RED, "text_color": WHITE, "win": False},
+    {"label": "WIN", "color": RED, "text_color": WHITE, "win": True},
     {"label": "LOSE", "color": WHITE, "text_color": RED, "win": False},
 ]
 N_SEGMENTS = len(SEGMENTS)
