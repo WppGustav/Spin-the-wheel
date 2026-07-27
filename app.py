@@ -98,7 +98,7 @@ st.markdown(
     """
     <div class="rules-box">
     <b>How it works:</b> Enter your details below and spin the wheel for a chance
-    to win a free drink at the bar. If you lose, you can try again in 5 minutes.
+    to win a free drink at the bar. If you lose, you can try again in 1 minute.
     If you win, you'll get a downloadable certificate to show at the bar.
     Must be 18 or older to participate.
     </div>
