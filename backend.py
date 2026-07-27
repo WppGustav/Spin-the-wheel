@@ -21,8 +21,8 @@ from PIL import Image, ImageDraw, ImageFont
 # ---------------------------------------------------------------------------
 
 DATA_FILE = "spins_data.json"          # simple local "database"
-COOLDOWN_SECONDS = 5 * 60               # 5 minutes between attempts after a loss
-WIN_PROBABILITY = 0.20                  # 20% chance to win a free drink
+COOLDOWN_SECONDS = 1 * 60               # 1 minute between attempts after a loss
+WIN_PROBABILITY = 0.50                  # 50% chance to win a free drink
 BAR_NAME = "EVERS KÖK & BAR"
 BAR_ADDRESS = "Stenkilsvägen 23, Vätö"
 MIN_AGE = 18
